@@ -3,7 +3,15 @@
 <head>
 	<title>formulario de contacto</title>
 </head>
+
 <body>
+	<link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+	<div class="menu">
+		<ul>
+			<li><a class="activo" href="index.html">Inicio</a></li>
+			<li><a href="Contacto.html">Contacto</a></li>
+		</ul>
+		</div>
 	
 <form action="https://api.web3forms.com/submit" method="POST">
 
@@ -27,25 +35,46 @@
   
   <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
 
-  	<label for="usuario">Ingrese su Nombre</label>
-		<input type="text" name="First Name" required>
-
-		<br>
-		<label for="usuario">ingrese su email</label>
-		<input type="email" name="email" required>
-
-		<br>
-		<label for="subject">Asunto</label>
-		<input type="text" name="Asunto" required>
-		<br>
-		<label for="mensaje">ingrese su mensaje</label>
-		<textarea name="message" required></textarea>
-
-		<br>
-		<br>
-  <button type="submit">Enviar</button>
-  <button >Cancelar</button>
-  <a href="index.html">Inicio</a>
+<div class="container">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Nombre </label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Nombre">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">correo</label>
+    </div>
+    <div class="col-75">
+      <input type="email" id="lname" name="lastname" placeholder="correo">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Asunto</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Mensaje</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Escribe aqui su mensaje" style="height:200px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Enviar">
+  </div>
+  </form>
+</div>
+  	
+ 
 </form>
 
 </form>
